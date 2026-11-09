@@ -1,4 +1,25 @@
 {
-  "name": "VisitApp",
-  "displayName": "VisitApp"
+  "expo": {
+    "name": "Visited",
+    "slug": "visited-places",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "bundleIdentifier": "com.visitapp",
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.visitapp"
+    },
+    "plugins": [
+      "expo-sqlite",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Allow VisitApp to use your location to center the map."
+        }
+      ]
+    ]
+  }
 }
